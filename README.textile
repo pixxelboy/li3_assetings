@@ -20,16 +20,14 @@ h2. Installing the helper
 
 h2. Accessing the helper
 
-This is where it gets really easy and straightforward.
-Just insert the following snippet wher you want your <script type="text/javascript"> tags to be inserted
-
-	<?= $this->assets->loadConfFiles(); ?>
-	
-
-h2. Issues
-
+This is where it gets really **easy and straightforward**
+Just insert the following snippet wher you want your 
+<pre><code><script type="text/javascript"></code></pre>
+tags to be inserted
+<pre><code><?= $this->assets->loadConfFiles(); ?></code></pre>	
 
 h2. Similar (and more advanced) Projects
+
 *Kris Wallsmith and his brilliant Assetic framework https://github.com/kriswallsmith/assetic
 *BundleFu https://github.com/dotsunited/BundleFu
 
