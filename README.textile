@@ -1,0 +1,50 @@
+h1. li3_assetings
+
+li3_assetings is a Lithium plugin that allows you to easilly configure the required css and script files for your app, controller, action.
+
+h2. More Information
+
+li3_assetings takes advantage of the yaml formatting standard. More about this at http://yaml.org/ and the complete spec at http://www.yaml.org/spec/1.2/spec.html
+I started this because I feel really comfortable with assets declaration in configuration files, clearly separated from my views or controllers.
+
+h2. Dependencies
+
+To use this application, you will need:
+
+* Lithium, a php 5.3 only framework built for speed, simplicity, and maintainability	http://dev.lithify.me/
+* SfYAML, A PHP library that speaks YAML	http://components.symfony-project.org/yaml/
+
+h2. Installing the helper
+
+
+
+h2. Accessing the helper
+
+This is where it gets really easy and straightforward.
+Just insert the following snippet wher you want your <script type="text/javascript"> tags to be inserted (the bottom of your templates is the best practice -> http://developer.yahoo.com/performance/rules.html#js_bottom)
+
+	<?= $this->assets->loadConfFiles(); ?>
+	
+
+h4. Issues
+
+
+h2. Similar (and more advanced) Projects
+*Kris Wallsmith and his brilliant Assetic framework https://github.com/kriswallsmith/assetic
+*BundleFu https://github.com/dotsunited/BundleFu
+
+h2. Contributing
+
+If you make improvements to this application, please share with others.
+
+* Fork the project on GitHub.
+* Make your feature addition or bug fix.
+* Commit with Git.
+* Send the author a pull request.
+
+If you add functionality to this application, create an alternative implementation, or build an application that is similar, please contact me and I'll add a note to the README so that others can find your work.
+
+h2. Credits
+
+
+h2. License
