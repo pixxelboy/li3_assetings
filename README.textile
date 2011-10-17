@@ -21,7 +21,7 @@ h2. Installing the helper
 h2. Accessing the helper
 
 This is where it gets really easy and straightforward.
-Just insert the following snippet wher you want your <script type="text/javascript"> tags to be inserted (the bottom of your templates is the best practice -> http://developer.yahoo.com/performance/rules.html#js_bottom)
+Just insert the following snippet wher you want your <script type="text/javascript"> tags to be inserted (the bottom of your templates is the best practice http://developer.yahoo.com/performance/rules.html#js_bottom)
 
 	<?= $this->assets->loadConfFiles(); ?>
 	
