@@ -7,7 +7,7 @@ More Information
 ----------------
 I like yaml. I really do. And I hate my templates (or my views, or my controllers) to get crippled with verbose-mode helpers, setting files, options ... etc...etc...
 If you feel like the following snippet is not for you
-```
+```php
 $css = new AssetCollection(array(
     new FileAsset('/path/to/src/styles.less', array(new LessFilter())),
     new GlobAsset('/path/to/css/*'),
@@ -17,7 +17,7 @@ $css = new AssetCollection(array(
 
 // this will echo CSS compiled by LESS and compressed by YUI
 echo $css->dump();
-```
+```php
 and you're more into something like
 ```
 <?= $this->assets->loadConfFiles(); ?>
