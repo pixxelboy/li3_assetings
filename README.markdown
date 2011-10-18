@@ -88,7 +88,7 @@ tags to be inserted
 <?= $this->assets->loadConfFiles(); ?>
 ```	
 
-Similar (and more advanced) Projects
+Based on cool projects like:
 ----------------
 
 * Kris Wallsmith and his brilliant "Assetic framework": [https://github.com/kriswallsmith/assetic](https://github.com/kriswallsmith/assetic "https://github.com/kriswallsmith/assetic")
@@ -98,6 +98,15 @@ Release notes
 ----------------
 * v 0.1
 	* Basic loading and generating of html script tags **ONLY**
+
+Future releases notes
+----------------
+I have plenty of stuff to offer, like:
+* css handling
+* assets bundling for better performances
+* configuration handling in the yaml application.yml file
+
+If there are some features you would like li3_assetings to handle, send me a mail or make a pull-request (see "Contributing" below)
 
 Contributing
 ----------------
