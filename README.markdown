@@ -23,6 +23,7 @@ Installing the helper
 ----------------
 
 First, load the configuration file in your li3 bootstrap file like this :
+
 ```php
 /**
  * This file sets default path to yml assets configuration files
@@ -32,6 +33,7 @@ require __DIR__ . '/assets.php';
 
 You've just declared your li3 application to load a file, so create it !
 It must contain the path to your yml configuration files like this:
+
 ```php
 /**
  * This is the path to assets yml configuration files
