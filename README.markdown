@@ -36,7 +36,7 @@ To use this application, you will need:
 
 And that's it !
 
-Installing the helper
+Installing/configuring the helper
 ----------------
 
 First, load the configuration file in your li3 bootstrap file like this :
@@ -73,22 +73,26 @@ css:
 
 ```
 Your application yml is the global conf file, so basically whatever you declare in it will be set everywhere.
-
+For now, each time the helper is called, it uses li3's 
 
 Accessing the helper
 ----------------
 
 This is where it gets really **easy and straightforward**
 Just insert the following snippet wher you want your 
-``` html<script type="text/javascript">```
+``` html 
+<script type="text/javascript">
+```
 tags to be inserted
-``` php<?= $this->assets->loadConfFiles(); ?>```	
+``` php
+<?= $this->assets->loadConfFiles(); ?>
+```	
 
 Similar (and more advanced) Projects
 ----------------
 
-* Kris Wallsmith and his brilliant "Assetic framework":https://github.com/kriswallsmith/assetic
-* "BundleFu":https://github.com/dotsunited/BundleFu
+* Kris Wallsmith and his brilliant "Assetic framework": [https://github.com/kriswallsmith/assetic](https://github.com/kriswallsmith/assetic "https://github.com/kriswallsmith/assetic")
+* "BundleFu": [https://github.com/dotsunited/BundleFu](https://github.com/dotsunited/BundleFu "https://github.com/dotsunited/BundleFu")
 
 Release notes
 ----------------
