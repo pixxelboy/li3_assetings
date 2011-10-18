@@ -5,9 +5,25 @@ li3_assetings is a Lithium helper that allows you to easilly configure the requi
 
 More Information
 ----------------
+I like yaml. I really do. And I hate my templates (or my views, or my controllers) to get crippled with verbose-mode helpers, setting files, options ... etc...etc...
+If you feel like the following snippet is not for you
+```
+$css = new AssetCollection(array(
+    new FileAsset('/path/to/src/styles.less', array(new LessFilter())),
+    new GlobAsset('/path/to/css/*'),
+), array(
+    new Yui\CssCompressorFilter('/path/to/yuicompressor.jar'),
+));
 
+// this will echo CSS compiled by LESS and compressed by YUI
+echo $css->dump();
+```
+and you're more into something like
+```
+<?= $this->assets->loadConfFiles(); ?>
+```
+Then you've come to the right place.
 li3_assetings takes advantage of the yaml formatting standard. More about this at http://yaml.org/ and the complete spec at http://www.yaml.org/spec/1.2/spec.html
-I started this because I feel really comfortable with assets declaration in configuration files, clearly separated from my views or controllers.
 
 Dependencies
 ----------------
