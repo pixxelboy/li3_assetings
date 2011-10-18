@@ -1,22 +1,26 @@
-h1. li3_assetings (0.1)
+li3_assetings (0.1)
+===========
 
 li3_assetings is a Lithium helper that allows you to easilly configure the required css and script files for your app, controller, action.
 
-h2. More Information
+More Information
+----------------
 
 li3_assetings takes advantage of the yaml formatting standard. More about this at http://yaml.org/ and the complete spec at http://www.yaml.org/spec/1.2/spec.html
 I started this because I feel really comfortable with assets declaration in configuration files, clearly separated from my views or controllers.
 
-h2. Dependencies
+Dependencies
+----------------
 
 To use this application, you will need:
 
-* Lithium, a php 5.3 only framework built for speed, simplicity, and maintainability	"http://dev.lithify.me/":http://dev.lithify.me/
-* SfYAML, A PHP library that speaks YAML "http://components.symfony-project.org/yaml/":http://components.symfony-project.org/yaml/
+* Lithium, a php 5.3 only framework built for speed, simplicity, and maintainability	[http://dev.lithify.me/](http://dev.lithify.me/ "http://dev.lithify.me/")
+* SfYAML, A PHP library that speaks YAML [http://components.symfony-project.org/yaml/](http://components.symfony-project.org/yaml/ "http://components.symfony-project.org/yaml/")
 
 And that's it !
 
-h2. Installing the helper
+Installing the helper
+----------------
 
 First, load the configuration file in your li3 bootstrap file like this :
 ```php
@@ -37,7 +41,8 @@ define('ASSETS_CONF_PATH', dirname(LITHIUM_APP_PATH) . '/app/config/assets');
 
 You can put your yml files where it suits best your needs.
 
-h2. Accessing the helper
+Accessing the helper
+----------------
 
 This is where it gets really **easy and straightforward**
 Just insert the following snippet wher you want your 
@@ -45,19 +50,19 @@ Just insert the following snippet wher you want your
 tags to be inserted
 ```php<?= $this->assets->loadConfFiles(); ?>```	
 
-h2. Similar (and more advanced) Projects
+Similar (and more advanced) Projects
+----------------
 
 * Kris Wallsmith and his brilliant "Assetic framework":https://github.com/kriswallsmith/assetic
 * "BundleFu":https://github.com/dotsunited/BundleFu
 
-h2. Realease notes
-h3. 0.1
-* Fork the project on GitHub.
-* Make your feature addition or bug fix.
-* Commit with Git.
-* Send the author a pull request.
+Release notes
+----------------
+* v 0.1
+	* Basic loading and generating of html script tags **ONLY**
 
-h2. Contributing
+Contributing
+----------------
 
 If you make improvements to this application, please share with others.
 
@@ -68,7 +73,9 @@ If you make improvements to this application, please share with others.
 
 If you add functionality to this application, create an alternative implementation, or build an application that is similar, please contact me and I'll add a note to the README so that others can find your work.
 
-h2. Credits
+Credits
+----------------
 
 
-h2. License
+License
+----------------
