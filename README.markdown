@@ -23,8 +23,8 @@ and you're more into something like
 ```
 <?= $this->assets->loadConfFiles(); ?>
 ```
-Then you've come to the right place.
-li3_assetings takes advantage of the yaml formatting standard. More about this at http://yaml.org/ and the complete spec at http://www.yaml.org/spec/1.2/spec.html
+then you've come to the right place.
+li3_assetings takes advantage of the yaml file format. More about this at http://yaml.org/ and the complete spec at http://www.yaml.org/spec/1.2/spec.html
 
 Dependencies
 ----------------
