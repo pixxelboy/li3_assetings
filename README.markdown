@@ -8,7 +8,7 @@ More Information
 I like yaml. I really do. And I hate my templates (or my views, or my controllers) to get crippled with verbose-mode helpers, setting files, options ... etc...etc...
 If you feel like the following snippet is not for you
 
-```php
+``` php
 $css = new AssetCollection(array(
     new FileAsset('/path/to/src/styles.less', array(new LessFilter())),
     new GlobAsset('/path/to/css/*'),
@@ -20,7 +20,7 @@ $css = new AssetCollection(array(
 echo $css->dump();
 ```
 and you're more into something like
-```
+``` php
 <?= $this->assets->loadConfFiles(); ?>
 ```
 then you've come to the right place.
@@ -41,7 +41,7 @@ Installing the helper
 
 First, load the configuration file in your li3 bootstrap file like this :
 
-```php
+``` php
 /**
  * This file sets default path to yml assets configuration files
  */
@@ -51,7 +51,7 @@ require __DIR__ . '/assets.php';
 You've just declared your li3 application to load a file, so create it !
 It must contain the path to your yml configuration files like this:
 
-```php
+``` php
 /**
  * This is the path to assets yml configuration files
  */
@@ -64,7 +64,7 @@ In the previously declared ASSETS_CONF_PATH, you need at least 1 configuration f
 The yml files need one top-level key, defining the assets type : javascript or css
 Here's an example:
 
-````yml
+``` yml
 javascripts:
   - libs/jquery.1.6.2
   - libs/modernizr-2.0.6
@@ -80,9 +80,9 @@ Accessing the helper
 
 This is where it gets really **easy and straightforward**
 Just insert the following snippet wher you want your 
-```html<script type="text/javascript">```
+``` html<script type="text/javascript">```
 tags to be inserted
-```php<?= $this->assets->loadConfFiles(); ?>```	
+``` php<?= $this->assets->loadConfFiles(); ?>```	
 
 Similar (and more advanced) Projects
 ----------------
