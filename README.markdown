@@ -43,15 +43,20 @@ define('ASSETS_CONF_PATH', dirname(LITHIUM_APP_PATH) . '/app/config/assets');
 
 You can put your yml files where it suits best your needs.
 In the previously declared ASSETS_CONF_PATH, you need at least 1 configuration file, named application.yml.
-It basically looks like this:
+
+The yml files need one top-level key, defining the assets type : javascript or css
+Here's an example:
 
 ````yml
 javascripts:
   - libs/jquery.1.6.2
   - libs/modernizr-2.0.6
+css:
+  - bootstrap.css
 
 ```
 Your application yml is the global conf file, so basically whatever you declare in it will be set everywhere.
+
 
 Accessing the helper
 ----------------
