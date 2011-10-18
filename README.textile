@@ -19,17 +19,21 @@ And that's it !
 h2. Installing the helper
 
 First, load the configuration file in your li3 bootstrap file like this :
-@/**
+```php
+/**
  * This file sets default path to yml assets configuration files
  */
-require __DIR__ . '/assets.php';@
+require __DIR__ . '/assets.php';
+```
 
 You've just declared your li3 application to load a file, so create it !
 It must contain the path to your yml configuration files like this:
-@/**
+```php
+/**
  * This is the path to assets yml configuration files
  */
-define('ASSETS_CONF_PATH', dirname(LITHIUM_APP_PATH) . '/app/config/assets');@
+define('ASSETS_CONF_PATH', dirname(LITHIUM_APP_PATH) . '/app/config/assets');
+```
 
 You can put your yml files where it suits best your needs.
 
@@ -37,9 +41,9 @@ h2. Accessing the helper
 
 This is where it gets really **easy and straightforward**
 Just insert the following snippet wher you want your 
-@<pre><code>@<script type="text/javascript">@
+```html<script type="text/javascript">```
 tags to be inserted
-@<?= $this->assets->loadConfFiles(); ?>@	
+```php<?= $this->assets->loadConfFiles(); ?>```	
 
 h2. Similar (and more advanced) Projects
 
@@ -47,7 +51,7 @@ h2. Similar (and more advanced) Projects
 * "BundleFu":https://github.com/dotsunited/BundleFu
 
 h2. Realease notes
-h.3 0.1
+h3. 0.1
 * Fork the project on GitHub.
 * Make your feature addition or bug fix.
 * Commit with Git.
